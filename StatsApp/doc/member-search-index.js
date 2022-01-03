@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"statsApp.Main","c":"Principale","l":"main(String[])","u":"main(java.lang.String[])"},{"p":"statsApp.Main","c":"Principale","l":"Principale()","u":"%3Cinit%3E()"}];updateSearchResults();
