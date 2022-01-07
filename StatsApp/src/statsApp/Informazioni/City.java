@@ -2,7 +2,7 @@ package statsApp.Informazioni;
 
 /** Classe che rappresenta le caratteristiche e le proprietà di ogni città.
  * 
- * @author 
+ * @author Michele
  * @author Mattia 
  */
 import java.util.Vector;
