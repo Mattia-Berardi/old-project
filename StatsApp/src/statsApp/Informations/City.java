@@ -1,4 +1,4 @@
-package statsApp.Informazioni;
+package statsApp.Informations;
 
 /** Classe che rappresenta le caratteristiche e le proprietà di ogni città.
  * 
@@ -12,7 +12,7 @@ public class City {
 	
 	private String name;
 	private String country;
-	
+	private Vector<Weather> vector = new Vector<Weather>();
 	
 	
 	public City(String name) {
@@ -26,6 +26,10 @@ public class City {
 		this.country=country;
 	}
 	
+	public City() {
+	}
+
+
 	public String getName() {
 		return name;
 	}
@@ -42,17 +46,18 @@ public class City {
 		this.country = country;
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public Vector<Weather> getVector() {
+		return vector;
 	}
+	
+	public void setVector(Vector<Weather> vector) {
+		this.vector = vector;
+	}
+	
+	
+	
+	
+
+	
 
 }

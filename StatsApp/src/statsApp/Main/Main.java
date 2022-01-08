@@ -4,10 +4,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import org.json.simple.*;
 
-import statsApp.Informazioni.City;
-import statsApp.Informazioni.Weather;
+import statsApp.Informations.City;
+import statsApp.Informations.Weather;
 
-public class Principale {
+public class Main {
 
 	public NomeMetodo<Object> coseVarie() {
 		
@@ -24,9 +24,5 @@ public class Principale {
 	
 	
 	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
+	
 }

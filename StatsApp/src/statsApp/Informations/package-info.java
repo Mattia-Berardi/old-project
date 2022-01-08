@@ -6,4 +6,4 @@
  * @author Mattia
  *
  */
-package statsApp.Informazioni;
+package statsApp.Informations;
