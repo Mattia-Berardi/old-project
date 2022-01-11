@@ -39,6 +39,29 @@ public class GetData {
 		return obj;
 	}
 	
+	public City getCityInfo(String name) {
+		JSONObject object = getCityWeather(name);
+		City city = new City(name);
+		
+		try {
+			
+			JSONObject cityObj = object.getJSONObject("city");
+			String country = (String) cityObj.get("country");
+			int id = (int) cityObj.get("id");
+			JSONObject coordinatesObj = cityObj.getJSONObject("coord");
+			double latitude = (double) coordinatesObj.get("lat");
+			double longitude = (double) coordinatesObj.get("lon");
+			Coordinates coordinates = new Coordinates(latitude,longitude); 
+			city.setCountry(country);
+			city.setId(id);
+			city.setCoordinates(coordinates);
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return city;
+	}
+	
 	private String api_key = "28d53625a08af41f9d7fe9fa0b1c63a5";
 	
 	

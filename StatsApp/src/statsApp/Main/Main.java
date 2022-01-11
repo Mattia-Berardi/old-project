@@ -6,6 +6,7 @@ import org.json.simple.*;
 
 import statsApp.Informations.City;
 import statsApp.Informations.Weather;
+import statsApp.Informations.Coordinates;
 
 public class Main {
 
