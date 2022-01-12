@@ -94,9 +94,16 @@ public class City {
 		this.vector = vector;
 	}
 	
+	public String toStringVector() {
+		String ret="";
+		for (int i=0; i<vector.size(); i++)
+			ret += vector.get(i).toString();
+		return ret;
+	}
 	
-	
-	
+	public String toString() {
+		return "name=" + name + ", country=" + country + ", id=" + id + ", coordinates=" + coordinates +  ", weatherArray=" + toStringVector() + "";
+	}
 
 	
 

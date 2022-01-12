@@ -53,7 +53,9 @@ public class Weather {
 		this.press_min = press_min;
 	}
 	
-	
+	public String toString() {
+		return ", temp_max=" + temp_max + ", temp_min=" + temp_min + ", press_max=" + press_max + ", press_min=" + press_min + "" ;
+	}
 	
 
 }

@@ -25,5 +25,9 @@ public class Coordinates {
 	public void setLongitude(double longitude) {
 		this.longitude = longitude;
 	}
+	
+	public String toString() {
+		return "[latitude=" + latitude + ", longitude=" + longitude + "]";
+	}
 
 }
